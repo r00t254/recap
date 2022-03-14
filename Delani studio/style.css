@@ -1,5 +1,6 @@
-body{
-    background-color: blue;
-    text-align: center;
-    font-size: medium;
+.landing{
+    background-image:url(..IP3-master/assets/backgrounds/h_img.jpg);
+    height: 120px; 
+    background-repeat: no-repeat;
+    background-size: cover;
 }
