@@ -1,0 +1,18 @@
+h1{
+    color: blueviolet;
+}
+body{
+    background-color: aqua;
+}
+p{
+    color: blueviolet;
+}
+image{
+    height: 30%;
+    margin: 500px;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
