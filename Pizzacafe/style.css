@@ -14,5 +14,7 @@ image{
     font-family: 'Times New Roman', Times, serif;
     align-items: center;
     flex-wrap: wrap;
+    min-width: 800;
+    font-display: 3.5rem;
 
 }
