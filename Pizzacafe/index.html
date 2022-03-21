@@ -21,6 +21,13 @@
 <p class="text">Show different flavor of pizza</p>
 <form action=""></form>
 <label class="label">Menu</label><br>
+<br><input type="choose flavor"><br>
+<label for="label">choose flavor</label><br>
+<select class="pizza flavor" id="flavor">
+<option label="Meat Deluxe" value="meat Delax"></option>
+<option label="Chicken " value="Chicken"></option>
+<option label="Veg Fear" value="Veg Feast"></option>
+</select>
 <br><input type="choose size"><br>
 <label for="label">choose size</label><br>
 <select class="pizza size" id="size">
@@ -28,11 +35,20 @@
 <option label="medium" value="800">medium</option>
 <option label="large" value="1200">large</option>
 </select><br>
-<input type="choose crust">
-<label for="label">choose crust</label>
-<input type="choose toppins">
-<label for="label">choose toppins</label>
-<input type="number of pizza" name="" id="button">
+<br><input type="choose crust"><br>
+<label for="label">choose crust</label><br>
+<select class="stuffed" id="crust">
+<option label="Neapolitan" value="150"></option>
+<option label="Gluten free" value="200"></option>
+<option label="cauliflower" value="250"></option>
+</select>
+<br><input  type="choose toppins"><br>
+<label for="label">choose toppins</label><br>
+<select class="sausage" id="toppins">
+<option label="mushrooms" value="100"></option>
+<option label="Black olivers" value="150"></option>
+<option label="pepperoni" value="200"></option></select>
+<input type="submit" name="Add To Cart" id="button">
 <div class="container">
     <div class="raw-md-1">
         <div class="col-md-3">
@@ -47,9 +63,9 @@
 </div>
 </div>
 </div>
-
-<script src="js/app.js" async defer></script>
-
-    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+<script src="js/app.js" async defer>
+</script>
+    </script>
 </body>
 </html>
