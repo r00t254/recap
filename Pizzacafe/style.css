@@ -8,13 +8,13 @@ p{
     color: blueviolet;
 }
 image{
-    height: 30%;
-    margin: 500px;
+    height: 30vh;
+    margin: 100px;
     position: relative;
-    font-family: 'Times New Roman', Times, serif;
     align-items: center;
     flex-wrap: wrap;
-    min-width: 800;
+    min-width: 50;
     font-display: 3.5rem;
+    float: left;
 
 }
