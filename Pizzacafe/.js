@@ -31,7 +31,20 @@ $("#pizzaSize").html($(".pizzaSize option:selected").text() + " - " + pizzaSize)
      var answer= prompt("get order delivered and have it hot at ksh @150 enter yes or no")
       if (answer =="yes") {var location=prompt("enter your location")
       alert("your order will get to you in a few minutes at " + location + "your total amount is " +(amountt + 50))}
- });
+ });if (pizzaDelivery === 0) {
+  prompt("Enter the place where Your pizza will be delivered.");
+  alert("Thank for choosing pizza-haochi your order will be delivered in the next 20 minutes with a total cost of ksh" + total2.initialCost());
+
+} else if (pizzaDelivery === 1) {
+
+  alert("Thank you for choosing pizza Inn your cost is ksh " + total2.initialCost());
+
+}
+
+
+});
+
+
 
 
 
