@@ -7,14 +7,13 @@ body{
 p{
     color: blueviolet;
 }
-image{
-    height: 30vh;
+img{
+    height: 50vh;
     margin: 100px;
     position: relative;
     align-items: center;
     flex-wrap: wrap;
-    min-width: 50;
-    font-display: 3.5rem;
+    font-size: large;
     float: left;
 
 }
