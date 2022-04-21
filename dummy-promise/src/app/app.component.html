@@ -1,0 +1,20 @@
+<div class="container">
+    <form>
+        <div class="form-group row mt-4">
+          <label for="username" class="col-sm-2 col-form-label">Enter your username</label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" id="username" placeholder="username">
+        </div>
+        <button type="button" class="btn btn-success col-sm-2">submit</button>
+        </div>
+      </form>
+
+    <div class="display-details">
+        <div class="jumbotron">
+            <h1>{{user.name}}</h1>
+            <img src="{{user.avatar_url}}" alt="{{user.name}} avatar image" class="img-thumbnail" style="height: 150px;">
+            <p class="lead">Date of signup {{user.created_at|date}}</p>
+            <a class="btn btn-lg btn-primary" href="{{user.html_url}}" role="button">View {{user.name}} profile »</a>
+          </div>
+    </div>
+</div>
