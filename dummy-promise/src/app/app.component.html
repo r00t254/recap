@@ -3,18 +3,30 @@
         <div class="form-group row mt-4">
           <label for="username" class="col-sm-2 col-form-label">Enter your username</label>
           <div class="col-sm-8">
-            <input type="text" class="form-control" id="username" placeholder="username">
+            <input type="text" class="form-control" id="username" placeholder="username" [formControl] = 'username' >
         </div>
-        <button type="button" class="btn btn-success col-sm-2">submit</button>
+        <button type="button" class="btn btn-success col-sm-2" (click)="search()">submit</button>
         </div>
       </form>
 
-    <div class="display-details">
+    <div class="display-user-info">
         <div class="jumbotron">
             <h1>{{user.name}}</h1>
             <img src="{{user.avatar_url}}" alt="{{user.name}} avatar image" class="img-thumbnail" style="height: 150px;">
             <p class="lead">Date of signup {{user.created_at|date}}</p>
-            <a class="btn btn-lg btn-primary" href="{{user.html_url}}" role="button">View {{user.name}} profile »</a>
+            <a class="btn btn-lg btn-primary" href="{{user.html_url}}" role="button" >View {{user.name}} profile »</a>
           </div>
+    </div>
+    <div class="display-repos">
+        <div *ngFor="let repo of repos">
+            <div class="card-body d-flex flex-column align-items-start">
+                <strong class="d-inline-block mb-2 text-success">{{repo.name}}</strong>
+                
+                <div class="mb-1 text-muted">Nov 11</div>
+                <p class="card-text mb-auto">{{repo.description}}</p>
+                <a href="{{repo.html_url}}">View repo</a>
+              </div>
+            
+        </div>
     </div>
 </div>

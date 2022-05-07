@@ -15,4 +15,11 @@ export class ApiService {
     })
     return promise;
   }
+
+  getRepo(username) {
+    const promise = new Promise((resolve, reject) => {
+      resolve(firstValueFrom(this.http.get(`https://api.github.com/users/${username}/repos`)))
+    })
+    return promise;
+  }
 }
