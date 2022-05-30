@@ -1,12 +1,9 @@
 from django.urls import path
 from . import views
 
-urlpatterns = [
-    path('login/', views.loginUser, name="login"),
-    path('logout/', views.logoutUser, name="logout"),
-    path('register/', views.registerUser, name="register"),
 
-    path('', views.gallery, name='gallery'),
-    path('photo/<str:pk>/', views.viewPhoto, name='photo'),
-    path('add/', views.addPhoto, name='add'),
+urlpatterns = [
+path('',views.home, name='home'),
+path('category/<slug:slug>', views.categoryPage, name='image-category'),
+path('category/<slug:slug1>/<slug:slug2>', views.imageDetailPage, name='image-detail'),
 ]
