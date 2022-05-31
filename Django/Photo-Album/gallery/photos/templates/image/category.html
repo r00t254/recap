@@ -12,10 +12,11 @@
 
     <link rel="canonical" href="">
 
-
-
+    
     <!-- Bootstrap core CSS -->
-    <link href="{% static 'images/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/CSS/style.css">
+
 
     <style>
       .bd-placeholder-img {
@@ -91,7 +92,7 @@
         <div class="col">
           <div class="card shadow-sm">
 
-            <img src="{{image.landImage.url}}" alt="{{image.altText}}">
+            <img src="{{image.landImage.url}}" alt="{{image.altText}}" style="height: 60vh;">
 
             <div class="card-body">
               <p class="card-text">{{image.shortDescription}} . . . <a href="{% url 'image-detail' slug1=category.slug slug2=image.slug %}">read more</a></p>

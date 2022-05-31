@@ -74,4 +74,4 @@ class Image(models.Model):
 
         self.slug = slugify('{} {}'.format(self.category.title, self.uniqueId))
         self.last_updated = timezone.localtime(timezone.now())
-        super(Image, self).save(*args, **kwargs)
+        # super(Image, self).save(*args, **kwargs)

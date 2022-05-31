@@ -15,7 +15,9 @@
 
 
     <!-- Bootstrap core CSS -->
-    <link href="{% static 'images/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/CSS/style.css">
+
 
     <style>
       .bd-placeholder-img {
@@ -87,20 +89,33 @@
       <div class="row">
 
         <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
           <img class="img-fluid" src="{{image.tallImage.url}}" alt="{{image.altText}}">
+        </div>
+          </div>
         </div>
 
         <div class="col-lg-6">
 
           <div class="row">
             <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body">
               <img class="img-fluid" src="{{image.landImage.url}}" alt="{{image.altText}}">
+                </div>
+              </div>
             </div>
           </div>
           <br>
           <div class="row">
             <div class="col-lg-12">
-              <img class="img-fluid" src="{{image.squareImage.url}}" alt="{{image.altText}}">
+              <div class="card">
+                <div class="card-body">
+              <img class="img-fluid" src="{{image.squareImage.url}}" alt="{{image.altText}}" style="height: 40vh;">
+                </div>
+              </div>
+              
             </div>
           </div>
 
@@ -122,7 +137,7 @@
 
 <footer class="text-muted py-5">
   <div class="container">
-    <p>Template adapted from Bootstrap 5 by <a href="https://image.shutterstock.com/image-photo/rivne-ukraine-octobner-21-2020-260nw-1907916766.jpg">Photo Album</a>.</p>
+<p>Template adapted from Bootstrap 5 by <a href="https://image.shutterstock.com/image-photo/rivne-ukraine-octobner-21-2020-260nw-1907916766.jpg">Photo Album</a>.</p>
   </div>
 </footer>
 

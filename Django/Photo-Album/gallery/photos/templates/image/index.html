@@ -17,6 +17,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/CSS/style.css">
 
     <style>
       .bd-placeholder-img {
@@ -40,11 +41,26 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="{% static 'image/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
 
 
   </head>
   <body>
+
+<h1>categories</h1>
+    <div class="card" style="width: 18rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <ul class="list-group list-group-flush">
+          {% for category in categories %}
+          <li class="list-group-item">
+            <a class="p-2 link-secondary" href="{% url 'image-category' category.slug %}">{{category.title}}</a>
+          </li>
+          {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
 
 <div class="container">
   <header class="blog-header py-3">
@@ -67,9 +83,7 @@
   <div class="nav-scroller py-1 mb-2">
     <nav class="nav d-flex justify-content-between">
 
-      {% for category in categories %}
-      <a class="p-2 link-secondary" href="{% url 'image-category' category.slug %}">{{category.title}}</a>
-      {% endfor %}
+   
 
     </nav>
   </div>
