@@ -8,6 +8,7 @@ def home(request):
 
     context = {}
     context['categories'] = categories
+    print(context['categories'])
 
     return render(request, 'image/index.html', context)
 
